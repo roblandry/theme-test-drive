@@ -1,10 +1,10 @@
 <?php
   /*
-   Plugin Name: Theme Test Drive
+   Plugin Name: Theme Test Drive (edited by Rob)
    Plugin URI: http://www.prelovac.com/vladimir/wordpress-plugins/theme-test-drive
    Description: Safely test drive any theme while visitors are using the default one. Includes instant theme preview via thumbnail.
    Author: Vladimir Prelovac
-   Version: 2.8.2
+   Version: 2.8.2.2
    Author URI: http://www.prelovac.com/vladimir/
    
    To-Do:
@@ -313,7 +313,7 @@
   // Admin Panel
   function themedrive_add_pages()
   {
-      add_theme_page('Theme Test Drive Options', 'Theme Test Drive', 8, __FILE__, 'themedrive_options_page');
+      add_theme_page('Theme Test Drive Options', 'Theme Test Drive', 'edit_theme_options', __FILE__, 'themedrive_options_page');
   }
   
   
