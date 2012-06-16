@@ -510,7 +510,7 @@ Alternatively, disabling this plug-in should also do the trick.
 require 'plugin-update-checker.php';
 $ExampleUpdateChecker = new PluginUpdateChecker(
 	'https://raw.github.com/roblandry/theme-test-drive/master/update.json', 
-	__FILE__
+	__FILE__, 'theme-test-drive'
 );
 
 //Here's how you can add query arguments to the URL.
