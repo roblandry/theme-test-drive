@@ -221,7 +221,7 @@
       }
       
       // perhaps they are using the theme directory instead of title
-      $themes = get_themes();
+      $themes = wp_get_themes();
       
       foreach ($themes as $theme_data) {
           // use Stylesheet as it's unique to the theme - Template could point to another theme's templates
@@ -259,9 +259,9 @@
   
   function themedrive_switcher()
   {
-      $themes = get_themes();
+      $themes = wp_get_themes();
       
-      $default_theme = get_current_theme();
+      $default_theme = wp_get_theme();
       
       if (count($themes) > 1) {
           $theme_names = array_keys($themes);
