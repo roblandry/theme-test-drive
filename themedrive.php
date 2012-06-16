@@ -1,10 +1,10 @@
 <?php
   /*
-   Plugin Name: Theme Test Drive (edited by Rob)
+   Plugin Name: Theme Test Drive (Edited)
    Plugin URI: http://www.prelovac.com/vladimir/wordpress-plugins/theme-test-drive
    Description: Safely test drive any theme while visitors are using the default one. Includes instant theme preview via thumbnail.
    Author: Vladimir Prelovac
-   Version: 2.8.2.2
+   Version:  2.8.2.1
    Author URI: http://www.prelovac.com/vladimir/
    
    To-Do:
@@ -15,7 +15,7 @@
   
   // // //  PLUGIN CODE // // //
   
-  $themedrive_localversion = "2.8.2";
+  $themedrive_localversion = "2.8.2.1";
   
   $wp_themedrive_plugin_url = trailingslashit(get_bloginfo('wpurl')) . PLUGINDIR . '/' . dirname(plugin_basename(__FILE__));
   
@@ -506,4 +506,17 @@ Alternatively, disabling this plug-in should also do the trick.
   
   //$tp.= '<p><img src="http://thumbnailspro.com/thumb.php?url='.trailingslashit(get_option('siteurl')).'?theme='.htmlspecialchars($theme_name).'&s=400" /><br /></p>';
   //<p><img src="http://images.websnapr.com/?size=s&key=42d1W6HhpB0B&url='.trailingslashit(get_option('siteurl')).'?theme='.themedrive_get_theme().'" /><br /></p>
+
+require 'plugin-update-checker.php';
+$ExampleUpdateChecker = new PluginUpdateChecker(
+	'https://raw.github.com/roblandry/theme-test-drive/master/update.json', 
+	__FILE__
+);
+
+//Here's how you can add query arguments to the URL.
+/*function addSecretKey($query){
+	$query['secret'] = 'foo';
+	return $query;
+}
+$ExampleUpdateChecker->addQueryArgFilter('addSecretKey'); */
 ?>
