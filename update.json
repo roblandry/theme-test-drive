@@ -1,15 +1,5 @@
 {
-  "name":"theme-test-drive",
-  "slug":"theme-test-drive",
-  "version":"2.8.2.1",
-  "author":"Rob Landry<\/a>",
-  "author_profile":"http:\/\/www.landryonline.com",
-  "contributors":{"Rob Landry":"http:\/\/www.landryonline.com"},
-  "requires":"3.4",
-  "tested":"3.5",
-  "last_updated":"2012-06-15",
-  "added":"2010-02-03",
-  "homepage":"http:\/\/www.landryonline.com\/",
-  "short_description":null,
-  "download_url":"https:\/\/github.com\/downloads\/roblandry\/theme-test-drive\/theme-test-drive.zip",
-  "upgrade_notice":"theme-test-drive"}
+  "version" : "2.8.2.1",
+  "details_url" : "https://github.com/roblandry/theme-test-drive",
+	"download_url" : "https://github.com/downloads/roblandry/theme-test-drive/theme-test-drive.zip"
+}
